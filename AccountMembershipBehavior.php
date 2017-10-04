@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jaszczomp
- * Date: 2017.10.04
- * Time: 23:35
- */
 
 namespace backend\components\behaviors;
 
@@ -13,22 +7,22 @@ use yii\db\BaseActiveRecord;
 
 
 /**
- * AccountBehavior automatically fills the specified attributes with the current Account Id value.
+ * AccountMembershipBehavior automatically fills the specified attributes with the current Account Id value.
  *
- * To use AccountBehavior, insert the following code to your ActiveRecord class:
+ * To use AccountMembershipBehavior, insert the following code to your ActiveRecord class:
  *
  * ```php
- * use yii\behaviors\AccountBehavior;
+ * use yii\behaviors\AccountMembershipBehavior;
  *
  * public function behaviors()
  * {
  *     return [
- *         AccountBehavior::className(),
+ *         AccountMembershipBehavior::className(),
  *     ];
  * }
  * ```
  *
- * By default, AccountBehavior will fill the `account_id` attributes with the current user account_id
+ * By default, AccountMembershipBehavior will fill the `account_id` attributes with the current user account_id
  * when the associated AR object is being inserted;
  *
  * Because attribute values will be set automatically by this behavior, they are usually not user input and should therefore
@@ -46,7 +40,7 @@ use yii\db\BaseActiveRecord;
  * {
  *     return [
  *         [
- *             'class' => AccountBehavior::className(),
+ *             'class' => AccountMembershipBehavior::className(),
  *             'accountIdAttribute' => 'instance_id',
  *             'value' => Yii::$app->user->identity->instance_id,
  *         ],
