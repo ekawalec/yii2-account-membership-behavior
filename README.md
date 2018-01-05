@@ -1,1 +1,1 @@
-# yii2-usefull-stuff
+# yii2-usefull-common-stuff
