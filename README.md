@@ -1,1 +1,1 @@
-# yii2-usefull-behaviors
+# yii2-usefull-stuff
