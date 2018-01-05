@@ -5,7 +5,7 @@
  * Time: 23:57
  */
 
-namespace backend\behaviors;
+namespace common\components\behaviors;
 
 
 use yii\behaviors\AttributeBehavior;
